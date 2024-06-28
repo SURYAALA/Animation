@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"content=width="width-device,intial-scale=1.0">
+    <style>
+        .body{
+            display:flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+        }
+        .div{
+            width: 40px;
+            height: 400px;
+            left: 10px;
+            background-color: aqua;
+            animation-name: colorchange;
+            animation-iteration-count: infinite;
+            animation-duration: 3s;
+            animation-direction: alternate;
+            position: absolute;
+            animation-timing-function: linear;
+            bottom: 100px;
+          
+        }
+        .s1{
+            width: 40px;
+            height: 250px;
+            left: 50px;
+            animation-name: colorchange;
+            background-color: rgb(235, 64, 172);
+            animation-iteration-count: infinite;
+            animation-duration: 2s;
+            position: absolute;
+            animation-direction: alternate;
+            animation-timing-function: linear;
+            bottom:100px;
+            
+        }
+        .s2{
+            width: 40px;
+            height: 350px;
+            left: 90px;
+            animation-name: colorchange;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            background-color: rgb(216, 235, 44);
+            animation-direction:reverse;
+            animation-timing-function: linear;
+            position: absolute;
+            bottom: 100px;
+            
+            
+
+        }
+        .s3{
+            width: 40px;
+            height: 100px;
+            left: 130px;
+            animation-name: colorchange;
+            background-color: rgb(23, 231, 158);
+            animation-iteration-count: infinite;
+            animation-duration: 5s;
+            animation-direction: alternate;
+            animation-timing-function: linear;
+            position: absolute;
+            bottom: 100px;
+        }
+        @keyframes colorchange {
+            0%{
+                height: 100px;
+            }
+            25%{
+                height: 200px;
+            }
+            50%{
+                height: 300px;
+            }
+            75%{
+                height: 400px;
+            }
+            100%{
+                height: 500px;
+                
+            }
+        }
+    </style>
+    </head>
+    <body>
+        <div class="body">
+        <div class="div"></div>&nbsp;&nbsp;&nbsp;&nbsp;
+            <div class="s1"></div>&nbsp;&nbsp;&nbsp;&nbsp;
+                <div class="s2"></div>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <div class="s3"></div>&nbsp;&nbsp;&nbsp;&nbsp;
+                </div>
+
+    </body>
+</html>

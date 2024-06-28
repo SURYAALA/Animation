@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"content=width="width-device,intial-scale=1.0">
+    </head>
+    <style>
+        .div{
+            width: 300px;
+            height: 200px;
+            position: relative;
+            background-color: aqua;
+            animation-name:  colorchange;
+            animation-duration: 0.5S;
+            animation-iteration-count:infinite;
+        }
+        @keyframes colorchange {
+            0%{
+                background-color: black;
+                transform: translateX(0px) translateY(0px);
+            }
+            25%{
+                background-color: blueviolet;
+                transform: translateX(300px) translateY(0px);
+            }
+            50%{
+                background-color: crimson;
+                transform: translateX(300PX)  translateY(300px);
+            }
+            75%{
+                background-color: darksalmon;
+                transform: translateX(0px) translateY(300px);
+            }
+            100%{
+                background-color: fuchsia;
+                transform: translateX(0px) translateY(0px);
+            }
+        }
+    </style>
+    <body>
+        <div class="div"> 
+        </div>
+    </body>
+</html>
